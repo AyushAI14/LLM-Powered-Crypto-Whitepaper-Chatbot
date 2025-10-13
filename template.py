@@ -18,7 +18,6 @@ file_list = [
     "requirements.txt",
     "setup.py",
     "Data/__init__.py",
-    "Data/raw_files",
     "app.py",
     "main.py",
     "Dockerfile",
