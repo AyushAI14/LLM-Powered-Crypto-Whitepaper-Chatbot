@@ -7,4 +7,5 @@ fastapi
 setuptools
 streamlit
 pymupdf
+langchain-milvus
 -e .

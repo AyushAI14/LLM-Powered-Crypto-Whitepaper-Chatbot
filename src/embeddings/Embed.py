@@ -6,11 +6,8 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-
-
+ 
 load_dotenv()
-
-
 
 class EmbeddingChunker:
     def __init__(self):
