@@ -73,7 +73,7 @@ st.divider()
 st.markdown(
     """
     <p style='text-align: center; color: grey;'>
-        Built By Ayush Vishwakarma by <a href='https://github.com/AyushAI14/LLM-Powered-Crypto-Whitepaper-Chatbot' target='_blank' style='text-decoration: none; color: gold; font-weight: bold;'>
+        Built By Ayush Vishwakarma <a href='https://github.com/AyushAI14/LLM-Powered-Crypto-Whitepaper-Chatbot' target='_blank' style='text-decoration: none; color: gold; font-weight: bold;'>
         Github</a>
     </p>
     """,
