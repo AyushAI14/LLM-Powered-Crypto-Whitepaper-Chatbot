@@ -44,6 +44,7 @@ logger.info(f"Starting Generation process --")
 g = Generation()
 temperature = 0.8
 print(g.groq("What is Bitcoin ",temperature))
+# print(g.gemini("What is Bitcoin ",temperature))
 db.clear_store() # for clearing vecter db
 scaper.clear_whitepapers()  #for clearing whitepaper
 l.clear_raw_txt()  #for clearing raw text file
