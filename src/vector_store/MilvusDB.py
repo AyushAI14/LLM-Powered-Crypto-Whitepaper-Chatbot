@@ -6,11 +6,10 @@ import os
 
 
 class Vectordb:
-    def __init__(self,k):
+    def __init__(self):
         self.embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
         self.URI = "./milvus.db"
         self._initialize_store()
-        self.k=k
         
     def _initialize_store(self):
         """Initialize Milvus Lite local database"""
@@ -39,19 +38,20 @@ class Vectordb:
             print(f"Error while adding documents: {e}")
             raise
     
-    def query(self, query_text: str):
+    def query(self, query_text: str,k:int=3):
         """
         Perform similarity search
         """
         try:
             print(f"Searching Milvus for: {query_text}")
-            results = self.vector_store.similarity_search_with_score(query_text, k=self.k)
-            for res, score in results:
-                print(f"* [SIM={score:3f}] {res.page_content} [{res.metadata}]")
+            results = self.vector_store.similarity_search_with_score(query_text, k=k)
+            # for res, score in results:
+            #     print(f"* [SIM={score:3f}] {res.page_content} [{res.metadata}]")
+            combined_text = "\n\n".join([res.page_content for res, _ in results])
+            return combined_text
         except Exception as e:
             print(f"Query failed: {e}")
             return []
-            
     def clear_store(self):
         """
         Delete the local Milvus DB file (session cleanup)
@@ -63,10 +63,11 @@ class Vectordb:
         else:
             print("No Milvus DB file found to delete.")
 
-# db = Vectordb(2)
+# db = Vectordb()
 # embedder = EmbeddingChunker()
 # splits = embedder.txt_splitter()
 # db.add_Document(splits)
-# Result = db.query("What is Bitcoin's consensus mechanism?")
+# Result = db.query("What is Bitcoin's consensus mechanism?",2)
+# print(Result)
 # for r in Result:
 #     print("->", r.page_content[:150])

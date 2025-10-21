@@ -1,6 +1,7 @@
 langchain
 langchain_community
 langchain_google_genai
+langchain_groq
 langchain_core
 pandas
 fastapi
