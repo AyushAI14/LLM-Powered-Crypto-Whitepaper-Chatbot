@@ -9,4 +9,5 @@ setuptools
 streamlit
 pymupdf
 langchain-milvus
+sentence-transformers
 -e .
