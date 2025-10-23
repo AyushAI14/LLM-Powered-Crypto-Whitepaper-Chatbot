@@ -9,5 +9,8 @@ setuptools
 streamlit
 pymupdf
 langchain-milvus
+torch==2.3.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 sentence-transformers
+
 -e .

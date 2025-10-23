@@ -6,7 +6,7 @@ COPY requirements.txt .
 COPY setup.py .
 
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir  requirements.txt
 
 COPY . .
 

@@ -6,6 +6,8 @@
 A **Retrieval-Augmented Generation (RAG)** powered chatbot that lets you **chat with any cryptocurrency whitepaper**.
 Built using **LangChain**, **Milvus**, **Groq**,**Gemini** and a full end-to-end pipeline for document ingestion, embedding, and query generation.
 
+**App is Live  [Link](http://3.94.192.236:8501/)**
+
 ---
 
 ### 🚀 Features
