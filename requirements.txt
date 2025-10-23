@@ -1,8 +1,6 @@
 langchain_community
 langchain_google_genai
 langchain_groq
-pandas
-fastapi
 setuptools
 streamlit
 pymupdf
