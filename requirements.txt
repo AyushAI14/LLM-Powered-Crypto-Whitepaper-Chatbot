@@ -8,5 +8,4 @@ langchain_community
 langchain-google-genai
 langchain-groq
 langchain-milvus
-torch==2.2.2
 -e .
