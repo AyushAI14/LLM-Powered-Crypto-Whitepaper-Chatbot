@@ -8,4 +8,5 @@ langchain_community
 langchain-google-genai
 langchain-groq
 langchain-milvus
+pymilvus[milvus_lite]
 -e .
