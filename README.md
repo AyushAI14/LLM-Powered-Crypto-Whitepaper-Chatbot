@@ -93,9 +93,9 @@ os.getenv("GEMINI_API_KEY")
 ### Cleanup Logic
 
 After each query:
-• `db.clear_store()` – clears the vector database
-• `scraper.clear_whitepapers()` – removes temporary whitepapers
-• `l.clear_raw_txt()` – deletes raw text files
+- `db.clear_store()` – clears the vector database
+- `scraper.clear_whitepapers()` – removes temporary whitepapers
+- `l.clear_raw_txt()` – deletes raw text files
 
 This ensures a clean environment for every run.
 
@@ -105,12 +105,5 @@ This ensures a clean environment for every run.
 
 **Developed by [Ayush Vishwakarma](https://github.com/AyushAI14)**
 
----
-
-### Future Improvements
-
-• Add a predefined list of supported coins
-• Enhance UI responsiveness
-• Extend support for non-English whitepapers
 
 ---
